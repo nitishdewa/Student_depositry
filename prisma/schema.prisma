@@ -12,4 +12,5 @@ model Student {
   email  String  @unique
   course String
   status String  @default("Active")
+@@map("student") 
 }
