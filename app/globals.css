@@ -13,17 +13,17 @@ body {
   font-size: 17px;
 }
 
-/* ---- Sidebar ---- */
+
 .sidebar {
   width: 260px;
   background: #eef2ff;
   padding: 25px 15px;
   flex-shrink: 0;
 
-  /* ✨ Naya: sidebar ko vertical flex banaya taaki button neeche push ho */
+ 
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* poori screen height */
+  min-height: 100vh; 
 }
 
 .logo {
@@ -68,10 +68,10 @@ body {
   border-left: 4px solid #2563eb;
 }
 
-/* ✨ Naya: Sidebar bottom button (Quick Action) */
+
 .sidebar-btn {
-  margin-top: auto;            /* button ko neeche push karta hai */
-  margin-bottom: 20px;         /* neeche se gap */
+  margin-top: auto;            
+  margin-bottom: 20px;        
   width: 100%;
   background: #2563eb;
   color: white;
@@ -92,7 +92,7 @@ body {
   background: #1d4ed8;
 }
 
-/* ---- Main ---- */
+
 .main {
   flex: 1;
   padding: 30px;
@@ -132,7 +132,6 @@ body {
   border: 2px solid #2563eb;
 }
 
-/* ---- Search Box with Icon ---- */
 .search-wrapper {
   position: relative;
   display: inline-block;
@@ -154,7 +153,6 @@ body {
   pointer-events: none;
 }
 
-/* ---- Card ---- */
 .card {
   background: white;
   border-radius: 14px;
@@ -191,7 +189,7 @@ body {
   font-size: 16px;
 }
 
-/* ---- Table ---- */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -249,7 +247,6 @@ td {
   color: #dc2626;
 }
 
-/* ---- Bottom (Pagination) ---- */
 .bottom {
   margin-top: 20px;
   display: flex;
@@ -273,7 +270,7 @@ td {
   font-size: 15px;
 }
 
-/* ---- Modal (overlay) ---- */
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -299,7 +296,6 @@ td {
   font-size: 22px;
 }
 
-/* ---- Form ---- */
 .form-group {
   margin-bottom: 15px;
 }
@@ -351,7 +347,6 @@ td {
   font-size: 15px;
 }
 
-/* ---- Spinner ---- */
 .spinner {
   display: inline-block;
   width: 18px;
@@ -389,16 +384,14 @@ td {
   font-size: 17px;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
 
-/* Tablets aur chhoti screens (max-width 768px) */
+
 @media screen and (max-width: 768px) {
   body {
     flex-direction: column;
     padding: 0;
   }
 
-  /* Sidebar ko horizontal strip banao (pehle jaisa, lekin ab sidebar-btn adjust hoga) */
   .sidebar {
     width: 100%;
     padding: 15px;
@@ -407,7 +400,7 @@ td {
     align-items: center;
     justify-content: space-between;
     background: #eef2ff;
-    /* ✨ min-height hatao taaki scroll na aaye */
+  
     min-height: auto;
     flex-direction: row;  
   }
